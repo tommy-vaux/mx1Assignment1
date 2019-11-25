@@ -1,0 +1,239 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 152 528)
+	(text "counter28bit" (rect 5 0 81 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 491 24 508)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK" (rect 0 0 23 19)(font "Intel Clear" (font_size 8)))
+		(text "CLK" (rect 21 27 44 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "RESET" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "RESET" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "Digit0" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit0" (rect 79 27 115 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32))
+	)
+	(port
+		(pt 136 48)
+		(output)
+		(text "Digit1" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit1" (rect 79 43 115 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 48)(pt 120 48))
+	)
+	(port
+		(pt 136 64)
+		(output)
+		(text "Digit2" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit2" (rect 79 59 115 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 64)(pt 120 64))
+	)
+	(port
+		(pt 136 80)
+		(output)
+		(text "Digit3" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit3" (rect 79 75 115 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 80)(pt 120 80))
+	)
+	(port
+		(pt 136 96)
+		(output)
+		(text "Digit4" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit4" (rect 79 91 115 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 96)(pt 120 96))
+	)
+	(port
+		(pt 136 112)
+		(output)
+		(text "Digit5" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit5" (rect 79 107 115 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 112)(pt 120 112))
+	)
+	(port
+		(pt 136 128)
+		(output)
+		(text "Digit6" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit6" (rect 79 123 115 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 128)(pt 120 128))
+	)
+	(port
+		(pt 136 144)
+		(output)
+		(text "Digit7" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit7" (rect 79 139 115 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 144)(pt 120 144))
+	)
+	(port
+		(pt 136 160)
+		(output)
+		(text "Digit8" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit8" (rect 79 155 115 174)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 160)(pt 120 160))
+	)
+	(port
+		(pt 136 176)
+		(output)
+		(text "Digit9" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit9" (rect 79 171 115 190)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 176)(pt 120 176))
+	)
+	(port
+		(pt 136 192)
+		(output)
+		(text "Digit10" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit10" (rect 71 187 115 206)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 192)(pt 120 192))
+	)
+	(port
+		(pt 136 208)
+		(output)
+		(text "Digit11" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit11" (rect 71 203 115 222)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 208)(pt 120 208))
+	)
+	(port
+		(pt 136 224)
+		(output)
+		(text "Digit12" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit12" (rect 71 219 115 238)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 224)(pt 120 224))
+	)
+	(port
+		(pt 136 240)
+		(output)
+		(text "Digit13" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit13" (rect 71 235 115 254)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 240)(pt 120 240))
+	)
+	(port
+		(pt 136 256)
+		(output)
+		(text "Digit14" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit14" (rect 71 251 115 270)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 256)(pt 120 256))
+	)
+	(port
+		(pt 136 272)
+		(output)
+		(text "Digit15" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit15" (rect 71 267 115 286)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 272)(pt 120 272))
+	)
+	(port
+		(pt 136 288)
+		(output)
+		(text "Digit16" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit16" (rect 71 283 115 302)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 288)(pt 120 288))
+	)
+	(port
+		(pt 136 304)
+		(output)
+		(text "Digit17" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit17" (rect 71 299 115 318)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 304)(pt 120 304))
+	)
+	(port
+		(pt 136 320)
+		(output)
+		(text "Digit18" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit18" (rect 71 315 115 334)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 320)(pt 120 320))
+	)
+	(port
+		(pt 136 336)
+		(output)
+		(text "Digit19" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit19" (rect 71 331 115 350)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 336)(pt 120 336))
+	)
+	(port
+		(pt 136 352)
+		(output)
+		(text "Digit20" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit20" (rect 71 347 115 366)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 352)(pt 120 352))
+	)
+	(port
+		(pt 136 368)
+		(output)
+		(text "Digit21" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit21" (rect 71 363 115 382)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 368)(pt 120 368))
+	)
+	(port
+		(pt 136 384)
+		(output)
+		(text "Digit22" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit22" (rect 71 379 115 398)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 384)(pt 120 384))
+	)
+	(port
+		(pt 136 400)
+		(output)
+		(text "Digit23" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit23" (rect 71 395 115 414)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 400)(pt 120 400))
+	)
+	(port
+		(pt 136 416)
+		(output)
+		(text "Digit24" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit24" (rect 71 411 115 430)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 416)(pt 120 416))
+	)
+	(port
+		(pt 136 432)
+		(output)
+		(text "Digit25" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit25" (rect 71 427 115 446)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 432)(pt 120 432))
+	)
+	(port
+		(pt 136 448)
+		(output)
+		(text "Digit26" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit26" (rect 71 443 115 462)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 448)(pt 120 448))
+	)
+	(port
+		(pt 136 464)
+		(output)
+		(text "Digit27" (rect 0 0 44 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit27" (rect 71 459 115 478)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 464)(pt 120 464))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 496))
+	)
+)

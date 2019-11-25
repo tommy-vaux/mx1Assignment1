@@ -1,0 +1,100 @@
+Quartus Prime Archive log --	C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar_backups/ultrasonic_radar_final_version_backup.qarlog
+
+Archive:	C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar_backups/ultrasonic_radar_final_version_backup.qar
+Date:		Wed Sep 11 11:48:31 2019
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/4-1Multiplexer.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/BCDCounter16bit.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/BCDCounter4bit.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/BCDCounter4bitExpandable.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/BCDCounter8bit.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Clock_Divider_64.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Decoder.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Display.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/FINAL_RADAR_SYSTEM_TOP_LEVEL.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Formatted_Quad4to1Multiplexer.bsf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/HexToSSD.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Lab_1.qsf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Multiplexer4-1.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Multiplexer4_1.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Mux4.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Quad4to1Multiplexer.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Quad4to1Multiplexer.bsf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/SegA.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/SegA_Backup.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/SegB.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/SegC.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/SegD.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/SegE.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/SegF.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/SegG.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Sequencer_2B.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Storage20bit.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/TopLevel.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/TopLevelBackup.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform1.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform10.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform11.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform12.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform13.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform14.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform15.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform16.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform17.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform18.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform19.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform2.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform21.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform22.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform23.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform24.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform25.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform26.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform27.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform28.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform29.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform3.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform30.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform31.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform32.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform33.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform34.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform35.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform4.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform5.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform6.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform7.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform8.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/Waveform9.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/controlultrasonicsensor.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/controlultrasonicsensorfinal.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/controlultrasonicsensorv2.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/counter14bit.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/counter28bit.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/counter4bit.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/counter8bit.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/decoder2bit.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/displayBackup.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/displayCounter.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/distanceMeasure.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/divideBy10.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/divideBy5.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/full_adder.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/half_adder.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/measure_ultrasonic_sensor_time_interval.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/stepper_motor_controller.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/stepper_motor_forwards.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/stepper_motor_forwards_OLD.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/template.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/timetodistance.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/ultrasonicsensor.qpf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/wait1second.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar/wait1secondV2.bdf
+c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 89 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

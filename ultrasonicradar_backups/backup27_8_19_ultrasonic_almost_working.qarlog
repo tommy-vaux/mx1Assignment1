@@ -1,0 +1,89 @@
+Quartus Prime Archive log --	C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar_backups/backup27_8_19_ultrasonic_almost_working.qarlog
+
+Archive:	C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar_backups/backup27_8_19_ultrasonic_almost_working.qar
+Date:		Tue Aug 27 12:30:48 2019
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/4-1Multiplexer.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/BCDCounter16bit.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/BCDCounter4bit.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/BCDCounter4bitExpandable.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Clock_Divider_64.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Decoder.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Display.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Formatted_Quad4to1Multiplexer.bsf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/HexToSSD.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Lab_1.qsf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Multiplexer4-1.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Multiplexer4_1.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Mux4.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Quad4to1Multiplexer.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Quad4to1Multiplexer.bsf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/SegA.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/SegA_Backup.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/SegB.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/SegC.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/SegD.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/SegE.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/SegF.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/SegG.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Sequencer_2B.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Storage20bit.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/TopLevel.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/TopLevelBackup.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform1.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform10.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform11.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform12.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform13.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform14.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform15.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform16.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform17.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform18.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform19.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform2.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform21.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform22.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform23.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform24.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform25.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform26.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform27.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform28.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform29.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform3.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform30.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform31.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform4.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform5.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform6.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform7.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform8.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/Waveform9.vwf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/controlultrasonicsensor.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/controlultrasonicsensorfinal.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/controlultrasonicsensorv2.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/counter14bit.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/counter28bit.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/counter4bit.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/decoder2bit.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/displayBackup.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/displayCounter.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/distanceMeasure.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/divideBy10.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/divideBy5.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/full_adder.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/half_adder.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/measure_ultrasonic_sensor_time_interval.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/template.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/ultrasonicsensor.qpf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/wait1second.bdf
+C:/Users/Tommy/Google Drive Uni/Mechatronics_1/ultrasonicradar/wait1secondV2.bdf
+c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 78 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -1,0 +1,85 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 248 176)
+	(text "controlultrasonicsensorfinal" (rect 5 0 165 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 139 24 156)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK" (rect 0 0 23 19)(font "Intel Clear" (font_size 8)))
+		(text "CLK" (rect 21 27 44 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "RESET" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "RESET" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 232 32)
+		(output)
+		(text "DIVIDED_CLOCK_FAST" (rect 0 0 138 19)(font "Intel Clear" (font_size 8)))
+		(text "DIVIDED_CLOCK_FAST" (rect 73 27 211 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 32)(pt 216 32))
+	)
+	(port
+		(pt 232 48)
+		(output)
+		(text "Digit0" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit0" (rect 175 43 211 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 48)(pt 216 48))
+	)
+	(port
+		(pt 232 64)
+		(output)
+		(text "Digit1" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit1" (rect 175 59 211 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 64)(pt 216 64))
+	)
+	(port
+		(pt 232 80)
+		(output)
+		(text "Digit2" (rect 0 0 36 19)(font "Intel Clear" (font_size 8)))
+		(text "Digit2" (rect 175 75 211 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 80)(pt 216 80))
+	)
+	(port
+		(pt 232 96)
+		(output)
+		(text "PING" (rect 0 0 30 19)(font "Intel Clear" (font_size 8)))
+		(text "PING" (rect 181 91 211 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 96)(pt 216 96))
+	)
+	(port
+		(pt 232 112)
+		(output)
+		(text "CLK_CHECK" (rect 0 0 71 19)(font "Intel Clear" (font_size 8)))
+		(text "CLK_CHECK" (rect 140 107 211 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 232 112)(pt 216 112))
+	)
+	(drawing
+		(rectangle (rect 16 16 216 144))
+	)
+)

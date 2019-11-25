@@ -1,0 +1,543 @@
+Analysis & Synthesis report for Lab_1
+Sun Sep 01 17:55:41 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Sep 01 17:55:41 2019       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; Lab_1                                       ;
+; Top-level Entity Name              ; FINAL_RADAR_SYSTEM_TOP_LEVEL                ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 208                                         ;
+;     Total combinational functions  ; 170                                         ;
+;     Dedicated logic registers      ; 151                                         ;
+; Total registers                    ; 151                                         ;
+; Total pins                         ; 26                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++------------------------------------------------------------------+------------------------------+--------------------+
+; Option                                                           ; Setting                      ; Default Value      ;
++------------------------------------------------------------------+------------------------------+--------------------+
+; Device                                                           ; EP4CE6E22C8                  ;                    ;
+; Top-level entity name                                            ; FINAL_RADAR_SYSTEM_TOP_LEVEL ; Lab_1              ;
+; Family name                                                      ; Cyclone IV E                 ; Cyclone V          ;
+; Maximum processors allowed for parallel compilation              ; 4                            ;                    ;
+; Type of Retiming Performed During Resynthesis                    ; Full                         ;                    ;
+; Resynthesis Optimization Effort                                  ; Normal                       ;                    ;
+; Physical Synthesis Level for Resynthesis                         ; Normal                       ;                    ;
+; Use Generated Physical Constraints File                          ; On                           ;                    ;
+; Use smart compilation                                            ; Off                          ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                           ; On                 ;
+; Enable compact report table                                      ; Off                          ; Off                ;
+; Restructure Multiplexers                                         ; Auto                         ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                          ; Off                ;
+; Preserve fewer node names                                        ; On                           ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable                       ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001                 ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993                    ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto                         ; Auto               ;
+; Safe State Machine                                               ; Off                          ; Off                ;
+; Extract Verilog State Machines                                   ; On                           ; On                 ;
+; Extract VHDL State Machines                                      ; On                           ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                          ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000                         ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                          ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                           ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                           ; On                 ;
+; Parallel Synthesis                                               ; On                           ; On                 ;
+; DSP Block Balancing                                              ; Auto                         ; Auto               ;
+; NOT Gate Push-Back                                               ; On                           ; On                 ;
+; Power-Up Don't Care                                              ; On                           ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                          ; Off                ;
+; Remove Duplicate Registers                                       ; On                           ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                          ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                          ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                          ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                          ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                          ; Off                ;
+; Ignore SOFT Buffers                                              ; On                           ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                          ; Off                ;
+; Optimization Technique                                           ; Balanced                     ; Balanced           ;
+; Carry Chain Length                                               ; 70                           ; 70                 ;
+; Auto Carry Chains                                                ; On                           ; On                 ;
+; Auto Open-Drain Pins                                             ; On                           ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                          ; Off                ;
+; Auto ROM Replacement                                             ; On                           ; On                 ;
+; Auto RAM Replacement                                             ; On                           ; On                 ;
+; Auto DSP Block Replacement                                       ; On                           ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto                         ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto                         ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                           ; On                 ;
+; Strict RAM Replacement                                           ; Off                          ; Off                ;
+; Allow Synchronous Control Signals                                ; On                           ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                          ; Off                ;
+; Auto RAM Block Balancing                                         ; On                           ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                          ; Off                ;
+; Auto Resource Sharing                                            ; Off                          ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                          ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                          ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                          ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                           ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                          ; Off                ;
+; Timing-Driven Synthesis                                          ; On                           ; On                 ;
+; Report Parameter Settings                                        ; On                           ; On                 ;
+; Report Source Assignments                                        ; On                           ; On                 ;
+; Report Connectivity Checks                                       ; On                           ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                          ; Off                ;
+; Synchronization Register Chain Length                            ; 2                            ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation           ; Normal compilation ;
+; HDL message level                                                ; Level2                       ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                          ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000                         ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000                         ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                          ; 100                ;
+; Clock MUX Protection                                             ; On                           ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                          ; Off                ;
+; Block Design Naming                                              ; Auto                         ; Auto               ;
+; SDC constraint protection                                        ; Off                          ; Off                ;
+; Synthesis Effort                                                 ; Auto                         ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                           ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                          ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium                       ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto                         ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                           ; On                 ;
++------------------------------------------------------------------+------------------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                ;
++---------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path            ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                           ; Library ;
++---------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------+---------+
+; Multiplexer4-1.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/Multiplexer4-1.bdf                          ;         ;
+; SegA.bdf                                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/SegA.bdf                                    ;         ;
+; SegB.bdf                                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/SegB.bdf                                    ;         ;
+; SegC.bdf                                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/SegC.bdf                                    ;         ;
+; SegD.bdf                                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/SegD.bdf                                    ;         ;
+; SegE.bdf                                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/SegE.bdf                                    ;         ;
+; SegG.bdf                                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/SegG.bdf                                    ;         ;
+; SegF.bdf                                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/SegF.bdf                                    ;         ;
+; HexToSSD.bdf                                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/HexToSSD.bdf                                ;         ;
+; Quad4to1Multiplexer.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/Quad4to1Multiplexer.bdf                     ;         ;
+; Sequencer_2B.bdf                            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/Sequencer_2B.bdf                            ;         ;
+; Clock_Divider_64.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/Clock_Divider_64.bdf                        ;         ;
+; decoder2bit.bdf                             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/decoder2bit.bdf                             ;         ;
+; Display.bdf                                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/Display.bdf                                 ;         ;
+; distanceMeasure.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/distanceMeasure.bdf                         ;         ;
+; counter4bit.bdf                             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/counter4bit.bdf                             ;         ;
+; BCDCounter4bit.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/BCDCounter4bit.bdf                          ;         ;
+; controlultrasonicsensorfinal.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/controlultrasonicsensorfinal.bdf            ;         ;
+; divideBy5.bdf                               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/divideBy5.bdf                               ;         ;
+; divideBy10.bdf                              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/divideBy10.bdf                              ;         ;
+; measure_ultrasonic_sensor_time_interval.bdf ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/measure_ultrasonic_sensor_time_interval.bdf ;         ;
+; BCDCounter4bitExpandable.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/BCDCounter4bitExpandable.bdf                ;         ;
+; BCDCounter16bit.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/BCDCounter16bit.bdf                         ;         ;
+; Storage20bit.bdf                            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/Storage20bit.bdf                            ;         ;
+; stepper_motor_controller.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/stepper_motor_controller.bdf                ;         ;
+; stepper_motor_forwards.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/stepper_motor_forwards.bdf                  ;         ;
+; counter8bit.bdf                             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/counter8bit.bdf                             ;         ;
+; FINAL_RADAR_SYSTEM_TOP_LEVEL.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Tommy/Google Drive/Mechatronics_1/ultrasonicradar/FINAL_RADAR_SYSTEM_TOP_LEVEL.bdf            ;         ;
++---------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 208         ;
+;                                             ;             ;
+; Total combinational functions               ; 170         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 47          ;
+;     -- 3 input functions                    ; 45          ;
+;     -- <=2 input functions                  ; 78          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 170         ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 151         ;
+;     -- Dedicated logic registers            ; 151         ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 26          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; RESET~input ;
+; Maximum fan-out                             ; 51          ;
+; Total fan-out                               ; 870         ;
+; Average fan-out                             ; 2.33        ;
++---------------------------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                               ;
++-------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------+--------------+
+; Compilation Hierarchy Node                            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                   ; Entity Name                             ; Library Name ;
++-------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------+--------------+
+; |FINAL_RADAR_SYSTEM_TOP_LEVEL                         ; 170 (0)             ; 151 (0)                   ; 0           ; 0            ; 0       ; 0         ; 26   ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL                                                                                                                         ; FINAL_RADAR_SYSTEM_TOP_LEVEL            ; work         ;
+;    |distanceMeasure:inst3|                            ; 127 (5)             ; 116 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3                                                                                                   ; distanceMeasure                         ; work         ;
+;       |Display:inst|                                  ; 33 (0)              ; 14 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst                                                                                      ; Display                                 ; work         ;
+;          |Clock_Divider_64:inst1|                     ; 6 (0)               ; 6 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|Clock_Divider_64:inst1                                                               ; Clock_Divider_64                        ; work         ;
+;             |Sequencer_2B:inst2|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|Clock_Divider_64:inst1|Sequencer_2B:inst2                                            ; Sequencer_2B                            ; work         ;
+;             |Sequencer_2B:inst3|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|Clock_Divider_64:inst1|Sequencer_2B:inst3                                            ; Sequencer_2B                            ; work         ;
+;             |Sequencer_2B:inst|                       ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|Clock_Divider_64:inst1|Sequencer_2B:inst                                             ; Sequencer_2B                            ; work         ;
+;          |Clock_Divider_64:inst2|                     ; 6 (0)               ; 6 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|Clock_Divider_64:inst2                                                               ; Clock_Divider_64                        ; work         ;
+;             |Sequencer_2B:inst2|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|Clock_Divider_64:inst2|Sequencer_2B:inst2                                            ; Sequencer_2B                            ; work         ;
+;             |Sequencer_2B:inst3|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|Clock_Divider_64:inst2|Sequencer_2B:inst3                                            ; Sequencer_2B                            ; work         ;
+;             |Sequencer_2B:inst|                       ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|Clock_Divider_64:inst2|Sequencer_2B:inst                                             ; Sequencer_2B                            ; work         ;
+;          |HexToSSD:inst3|                             ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|HexToSSD:inst3                                                                       ; HexToSSD                                ; work         ;
+;             |SegA:inst2|                              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|HexToSSD:inst3|SegA:inst2                                                            ; SegA                                    ; work         ;
+;             |SegB:inst4|                              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|HexToSSD:inst3|SegB:inst4                                                            ; SegB                                    ; work         ;
+;             |SegC:inst5|                              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|HexToSSD:inst3|SegC:inst5                                                            ; SegC                                    ; work         ;
+;             |SegD:inst6|                              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|HexToSSD:inst3|SegD:inst6                                                            ; SegD                                    ; work         ;
+;             |SegE:inst7|                              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|HexToSSD:inst3|SegE:inst7                                                            ; SegE                                    ; work         ;
+;             |SegF:inst|                               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|HexToSSD:inst3|SegF:inst                                                             ; SegF                                    ; work         ;
+;             |SegG:inst8|                              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|HexToSSD:inst3|SegG:inst8                                                            ; SegG                                    ; work         ;
+;          |Quad4to1Multiplexer:inst|                   ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|Quad4to1Multiplexer:inst                                                             ; Quad4to1Multiplexer                     ; work         ;
+;             |Multiplexer4-1:inst1|                    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|Quad4to1Multiplexer:inst|Multiplexer4-1:inst1                                        ; Multiplexer4-1                          ; work         ;
+;             |Multiplexer4-1:inst2|                    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|Quad4to1Multiplexer:inst|Multiplexer4-1:inst2                                        ; Multiplexer4-1                          ; work         ;
+;             |Multiplexer4-1:inst3|                    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|Quad4to1Multiplexer:inst|Multiplexer4-1:inst3                                        ; Multiplexer4-1                          ; work         ;
+;             |Multiplexer4-1:inst|                     ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|Quad4to1Multiplexer:inst|Multiplexer4-1:inst                                         ; Multiplexer4-1                          ; work         ;
+;                |decoder2bit:inst|                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|Quad4to1Multiplexer:inst|Multiplexer4-1:inst|decoder2bit:inst                        ; decoder2bit                             ; work         ;
+;          |Sequencer_2B:inst5|                         ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|Sequencer_2B:inst5                                                                   ; Sequencer_2B                            ; work         ;
+;          |decoder2bit:inst4|                          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Display:inst|decoder2bit:inst4                                                                    ; decoder2bit                             ; work         ;
+;       |Storage20bit:inst2|                            ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|Storage20bit:inst2                                                                                ; Storage20bit                            ; work         ;
+;       |controlultrasonicsensorfinal:inst30|           ; 51 (6)              ; 41 (2)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30                                                               ; controlultrasonicsensorfinal            ; work         ;
+;          |Clock_Divider_64:inst1|                     ; 6 (0)               ; 6 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|Clock_Divider_64:inst1                                        ; Clock_Divider_64                        ; work         ;
+;             |Sequencer_2B:inst2|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|Clock_Divider_64:inst1|Sequencer_2B:inst2                     ; Sequencer_2B                            ; work         ;
+;             |Sequencer_2B:inst3|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|Clock_Divider_64:inst1|Sequencer_2B:inst3                     ; Sequencer_2B                            ; work         ;
+;             |Sequencer_2B:inst|                       ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|Clock_Divider_64:inst1|Sequencer_2B:inst                      ; Sequencer_2B                            ; work         ;
+;          |Clock_Divider_64:inst2|                     ; 6 (0)               ; 6 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|Clock_Divider_64:inst2                                        ; Clock_Divider_64                        ; work         ;
+;             |Sequencer_2B:inst2|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|Clock_Divider_64:inst2|Sequencer_2B:inst2                     ; Sequencer_2B                            ; work         ;
+;             |Sequencer_2B:inst3|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|Clock_Divider_64:inst2|Sequencer_2B:inst3                     ; Sequencer_2B                            ; work         ;
+;             |Sequencer_2B:inst|                       ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|Clock_Divider_64:inst2|Sequencer_2B:inst                      ; Sequencer_2B                            ; work         ;
+;          |Clock_Divider_64:inst|                      ; 6 (0)               ; 6 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|Clock_Divider_64:inst                                         ; Clock_Divider_64                        ; work         ;
+;             |Sequencer_2B:inst2|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|Clock_Divider_64:inst|Sequencer_2B:inst2                      ; Sequencer_2B                            ; work         ;
+;             |Sequencer_2B:inst3|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|Clock_Divider_64:inst|Sequencer_2B:inst3                      ; Sequencer_2B                            ; work         ;
+;             |Sequencer_2B:inst|                       ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|Clock_Divider_64:inst|Sequencer_2B:inst                       ; Sequencer_2B                            ; work         ;
+;          |Sequencer_2B:inst3|                         ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|Sequencer_2B:inst3                                            ; Sequencer_2B                            ; work         ;
+;          |Sequencer_2B:inst42|                        ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|Sequencer_2B:inst42                                           ; Sequencer_2B                            ; work         ;
+;          |Sequencer_2B:inst4|                         ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|Sequencer_2B:inst4                                            ; Sequencer_2B                            ; work         ;
+;          |counter4bit:inst50|                         ; 3 (0)               ; 3 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|counter4bit:inst50                                            ; counter4bit                             ; work         ;
+;             |Sequencer_2B:inst3|                      ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|counter4bit:inst50|Sequencer_2B:inst3                         ; Sequencer_2B                            ; work         ;
+;             |Sequencer_2B:inst|                       ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|counter4bit:inst50|Sequencer_2B:inst                          ; Sequencer_2B                            ; work         ;
+;          |divideBy10:inst110|                         ; 6 (2)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|divideBy10:inst110                                            ; divideBy10                              ; work         ;
+;             |BCDCounter4bit:inst|                     ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|divideBy10:inst110|BCDCounter4bit:inst                        ; BCDCounter4bit                          ; work         ;
+;          |divideBy10:inst120|                         ; 6 (2)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|divideBy10:inst120                                            ; divideBy10                              ; work         ;
+;             |BCDCounter4bit:inst|                     ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|divideBy10:inst120|BCDCounter4bit:inst                        ; BCDCounter4bit                          ; work         ;
+;          |divideBy5:inst100|                          ; 6 (2)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|divideBy5:inst100                                             ; divideBy5                               ; work         ;
+;             |BCDCounter4bit:inst|                     ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|controlultrasonicsensorfinal:inst30|divideBy5:inst100|BCDCounter4bit:inst                         ; BCDCounter4bit                          ; work         ;
+;       |measure_ultrasonic_sensor_time_interval:inst1| ; 38 (9)              ; 45 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|measure_ultrasonic_sensor_time_interval:inst1                                                     ; measure_ultrasonic_sensor_time_interval ; work         ;
+;          |BCDCounter16bit:inst|                       ; 24 (0)              ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|measure_ultrasonic_sensor_time_interval:inst1|BCDCounter16bit:inst                                ; BCDCounter16bit                         ; work         ;
+;             |BCDCounter4bitExpandable:inst2|          ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|measure_ultrasonic_sensor_time_interval:inst1|BCDCounter16bit:inst|BCDCounter4bitExpandable:inst2 ; BCDCounter4bitExpandable                ; work         ;
+;             |BCDCounter4bitExpandable:inst3|          ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|measure_ultrasonic_sensor_time_interval:inst1|BCDCounter16bit:inst|BCDCounter4bitExpandable:inst3 ; BCDCounter4bitExpandable                ; work         ;
+;             |BCDCounter4bitExpandable:inst4|          ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|measure_ultrasonic_sensor_time_interval:inst1|BCDCounter16bit:inst|BCDCounter4bitExpandable:inst4 ; BCDCounter4bitExpandable                ; work         ;
+;             |BCDCounter4bitExpandable:inst5|          ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|measure_ultrasonic_sensor_time_interval:inst1|BCDCounter16bit:inst|BCDCounter4bitExpandable:inst5 ; BCDCounter4bitExpandable                ; work         ;
+;             |BCDCounter4bitExpandable:inst|           ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|measure_ultrasonic_sensor_time_interval:inst1|BCDCounter16bit:inst|BCDCounter4bitExpandable:inst  ; BCDCounter4bitExpandable                ; work         ;
+;          |Storage20bit:inst40|                        ; 0 (0)               ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|measure_ultrasonic_sensor_time_interval:inst1|Storage20bit:inst40                                 ; Storage20bit                            ; work         ;
+;          |divideBy5:inst3|                            ; 5 (1)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|measure_ultrasonic_sensor_time_interval:inst1|divideBy5:inst3                                     ; divideBy5                               ; work         ;
+;             |BCDCounter4bit:inst|                     ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|distanceMeasure:inst3|measure_ultrasonic_sensor_time_interval:inst1|divideBy5:inst3|BCDCounter4bit:inst                 ; BCDCounter4bit                          ; work         ;
+;    |stepper_motor_controller:inst|                    ; 43 (6)              ; 35 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst                                                                                           ; stepper_motor_controller                ; work         ;
+;       |counter4bit:inst8|                             ; 3 (0)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|counter4bit:inst8                                                                         ; counter4bit                             ; work         ;
+;          |Sequencer_2B:inst3|                         ; 1 (1)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|counter4bit:inst8|Sequencer_2B:inst3                                                      ; Sequencer_2B                            ; work         ;
+;          |Sequencer_2B:inst|                          ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|counter4bit:inst8|Sequencer_2B:inst                                                       ; Sequencer_2B                            ; work         ;
+;       |counter8bit:inst12|                            ; 6 (0)               ; 7 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|counter8bit:inst12                                                                        ; counter8bit                             ; work         ;
+;          |counter4bit:inst3|                          ; 2 (0)               ; 3 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|counter8bit:inst12|counter4bit:inst3                                                      ; counter4bit                             ; work         ;
+;             |Sequencer_2B:inst3|                      ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|counter8bit:inst12|counter4bit:inst3|Sequencer_2B:inst3                                   ; Sequencer_2B                            ; work         ;
+;             |Sequencer_2B:inst|                       ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|counter8bit:inst12|counter4bit:inst3|Sequencer_2B:inst                                    ; Sequencer_2B                            ; work         ;
+;          |counter4bit:inst|                           ; 4 (0)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|counter8bit:inst12|counter4bit:inst                                                       ; counter4bit                             ; work         ;
+;             |Sequencer_2B:inst3|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|counter8bit:inst12|counter4bit:inst|Sequencer_2B:inst3                                    ; Sequencer_2B                            ; work         ;
+;             |Sequencer_2B:inst|                       ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|counter8bit:inst12|counter4bit:inst|Sequencer_2B:inst                                     ; Sequencer_2B                            ; work         ;
+;       |stepper_motor_forwards:inst|                   ; 28 (1)              ; 23 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|stepper_motor_forwards:inst                                                               ; stepper_motor_forwards                  ; work         ;
+;          |Clock_Divider_64:inst3|                     ; 6 (0)               ; 6 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|stepper_motor_forwards:inst|Clock_Divider_64:inst3                                        ; Clock_Divider_64                        ; work         ;
+;             |Sequencer_2B:inst2|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|stepper_motor_forwards:inst|Clock_Divider_64:inst3|Sequencer_2B:inst2                     ; Sequencer_2B                            ; work         ;
+;             |Sequencer_2B:inst3|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|stepper_motor_forwards:inst|Clock_Divider_64:inst3|Sequencer_2B:inst3                     ; Sequencer_2B                            ; work         ;
+;             |Sequencer_2B:inst|                       ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|stepper_motor_forwards:inst|Clock_Divider_64:inst3|Sequencer_2B:inst                      ; Sequencer_2B                            ; work         ;
+;          |Clock_Divider_64:inst4|                     ; 6 (0)               ; 6 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|stepper_motor_forwards:inst|Clock_Divider_64:inst4                                        ; Clock_Divider_64                        ; work         ;
+;             |Sequencer_2B:inst2|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|stepper_motor_forwards:inst|Clock_Divider_64:inst4|Sequencer_2B:inst2                     ; Sequencer_2B                            ; work         ;
+;             |Sequencer_2B:inst3|                      ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|stepper_motor_forwards:inst|Clock_Divider_64:inst4|Sequencer_2B:inst3                     ; Sequencer_2B                            ; work         ;
+;             |Sequencer_2B:inst|                       ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|stepper_motor_forwards:inst|Clock_Divider_64:inst4|Sequencer_2B:inst                      ; Sequencer_2B                            ; work         ;
+;          |counter4bit:inst15|                         ; 2 (0)               ; 2 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|stepper_motor_forwards:inst|counter4bit:inst15                                            ; counter4bit                             ; work         ;
+;             |Sequencer_2B:inst|                       ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|stepper_motor_forwards:inst|counter4bit:inst15|Sequencer_2B:inst                          ; Sequencer_2B                            ; work         ;
+;          |decoder2bit:inst|                           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|stepper_motor_forwards:inst|decoder2bit:inst                                              ; decoder2bit                             ; work         ;
+;          |divideBy10:inst120|                         ; 6 (2)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|stepper_motor_forwards:inst|divideBy10:inst120                                            ; divideBy10                              ; work         ;
+;             |BCDCounter4bit:inst|                     ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|stepper_motor_forwards:inst|divideBy10:inst120|BCDCounter4bit:inst                        ; BCDCounter4bit                          ; work         ;
+;          |divideBy5:inst17|                           ; 6 (2)               ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|stepper_motor_forwards:inst|divideBy5:inst17                                              ; divideBy5                               ; work         ;
+;             |BCDCounter4bit:inst|                     ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL_RADAR_SYSTEM_TOP_LEVEL|stepper_motor_controller:inst|stepper_motor_forwards:inst|divideBy5:inst17|BCDCounter4bit:inst                          ; BCDCounter4bit                          ; work         ;
++-------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 151   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 111   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 26                          ;
+; cycloneiii_ff         ; 151                         ;
+;     CLR               ; 111                         ;
+;     plain             ; 40                          ;
+; cycloneiii_lcell_comb ; 183                         ;
+;     normal            ; 183                         ;
+;         1 data inputs ; 82                          ;
+;         2 data inputs ; 9                           ;
+;         3 data inputs ; 45                          ;
+;         4 data inputs ; 47                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 1.50                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sun Sep 01 17:55:13 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ultrasonicsensor -c Lab_1
+Info (20032): Parallel compilation is enabled and will use up to 4 processors
+Info (12021): Found 1 design units, including 1 entities, in source file toplevelbackup.bdf
+    Info (12023): Found entity 1: TopLevelBackup
+Info (12021): Found 1 design units, including 1 entities, in source file mux4.bdf
+    Info (12023): Found entity 1: Mux4
+Info (12021): Found 1 design units, including 1 entities, in source file multiplexer4-1.bdf
+    Info (12023): Found entity 1: Multiplexer4-1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder.bdf
+    Info (12023): Found entity 1: Decoder
+Info (12021): Found 1 design units, including 1 entities, in source file 4-1multiplexer.bdf
+    Info (12023): Found entity 1: 4-1Multiplexer
+Info (12021): Found 1 design units, including 1 entities, in source file sega.bdf
+    Info (12023): Found entity 1: SegA
+Info (12021): Found 1 design units, including 1 entities, in source file sega_backup.bdf
+    Info (12023): Found entity 1: SegA_Backup
+Info (12021): Found 1 design units, including 1 entities, in source file segb.bdf
+    Info (12023): Found entity 1: SegB
+Info (12021): Found 1 design units, including 1 entities, in source file segc.bdf
+    Info (12023): Found entity 1: SegC
+Info (12021): Found 1 design units, including 1 entities, in source file template.bdf
+    Info (12023): Found entity 1: template
+Info (12021): Found 1 design units, including 1 entities, in source file segd.bdf
+    Info (12023): Found entity 1: SegD
+Info (12021): Found 1 design units, including 1 entities, in source file sege.bdf
+    Info (12023): Found entity 1: SegE
+Info (12021): Found 1 design units, including 1 entities, in source file segg.bdf
+    Info (12023): Found entity 1: SegG
+Info (12021): Found 1 design units, including 1 entities, in source file segf.bdf
+    Info (12023): Found entity 1: SegF
+Info (12021): Found 1 design units, including 1 entities, in source file hextossd.bdf
+    Info (12023): Found entity 1: HexToSSD
+Info (12021): Found 1 design units, including 1 entities, in source file multiplexer4_1.bdf
+    Info (12023): Found entity 1: Multiplexer4_1
+Info (12021): Found 1 design units, including 1 entities, in source file quad4to1multiplexer.bdf
+    Info (12023): Found entity 1: Quad4to1Multiplexer
+Info (12021): Found 1 design units, including 1 entities, in source file sequencer_2b.bdf
+    Info (12023): Found entity 1: Sequencer_2B
+Info (12021): Found 1 design units, including 1 entities, in source file toplevel.bdf
+    Info (12023): Found entity 1: TopLevel
+Info (12021): Found 1 design units, including 1 entities, in source file clock_divider_64.bdf
+    Info (12023): Found entity 1: Clock_Divider_64
+Info (12021): Found 1 design units, including 1 entities, in source file decoder2bit.bdf
+    Info (12023): Found entity 1: decoder2bit
+Info (12021): Found 1 design units, including 1 entities, in source file displaybackup.bdf
+    Info (12023): Found entity 1: displayBackup
+Info (12021): Found 1 design units, including 1 entities, in source file display.bdf
+    Info (12023): Found entity 1: Display
+Info (12021): Found 1 design units, including 1 entities, in source file distancemeasure.bdf
+    Info (12023): Found entity 1: distanceMeasure
+Info (12021): Found 1 design units, including 1 entities, in source file controlultrasonicsensor.bdf
+    Info (12023): Found entity 1: controlultrasonicsensor
+Info (12021): Found 1 design units, including 1 entities, in source file wait1second.bdf
+    Info (12023): Found entity 1: wait1second
+Info (12021): Found 1 design units, including 1 entities, in source file counter14bit.bdf
+    Info (12023): Found entity 1: counter14bit
+Info (12021): Found 1 design units, including 1 entities, in source file counter28bit.bdf
+    Info (12023): Found entity 1: counter28bit
+Info (12021): Found 1 design units, including 1 entities, in source file displaycounter.bdf
+    Info (12023): Found entity 1: displayCounter
+Info (12021): Found 1 design units, including 1 entities, in source file wait1secondv2.bdf
+    Info (12023): Found entity 1: wait1secondV2
+Info (12021): Found 1 design units, including 1 entities, in source file counter4bit.bdf
+    Info (12023): Found entity 1: counter4bit
+Info (12021): Found 1 design units, including 1 entities, in source file bcdcounter4bit.bdf
+    Info (12023): Found entity 1: BCDCounter4bit
+Info (12021): Found 1 design units, including 1 entities, in source file controlultrasonicsensorv2.bdf
+    Info (12023): Found entity 1: controlultrasonicsensorv2
+Info (12021): Found 1 design units, including 1 entities, in source file controlultrasonicsensorfinal.bdf
+    Info (12023): Found entity 1: controlultrasonicsensorfinal
+Info (12021): Found 1 design units, including 1 entities, in source file divideby5.bdf
+    Info (12023): Found entity 1: divideBy5
+Info (12021): Found 1 design units, including 1 entities, in source file divideby10.bdf
+    Info (12023): Found entity 1: divideBy10
+Info (12021): Found 1 design units, including 1 entities, in source file measure_ultrasonic_sensor_time_interval.bdf
+    Info (12023): Found entity 1: measure_ultrasonic_sensor_time_interval
+Info (12021): Found 1 design units, including 1 entities, in source file bcdcounter4bitexpandable.bdf
+    Info (12023): Found entity 1: BCDCounter4bitExpandable
+Info (12021): Found 1 design units, including 1 entities, in source file half_adder.bdf
+    Info (12023): Found entity 1: half_adder
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder.bdf
+    Info (12023): Found entity 1: full_adder
+Info (12021): Found 1 design units, including 1 entities, in source file bcdcounter16bit.bdf
+    Info (12023): Found entity 1: BCDCounter16bit
+Info (12021): Found 1 design units, including 1 entities, in source file storage20bit.bdf
+    Info (12023): Found entity 1: Storage20bit
+Info (12021): Found 1 design units, including 1 entities, in source file stepper_motor_controller.bdf
+    Info (12023): Found entity 1: stepper_motor_controller
+Info (12021): Found 1 design units, including 1 entities, in source file stepper_motor_forwards.bdf
+    Info (12023): Found entity 1: stepper_motor_forwards
+Info (12021): Found 1 design units, including 1 entities, in source file stepper_motor_forwards_old.bdf
+    Info (12023): Found entity 1: stepper_motor_forwards_OLD
+Info (12021): Found 1 design units, including 1 entities, in source file bcdcounter8bit.bdf
+    Info (12023): Found entity 1: BCDCounter8bit
+Info (12021): Found 1 design units, including 1 entities, in source file counter8bit.bdf
+    Info (12023): Found entity 1: counter8bit
+Info (12021): Found 1 design units, including 1 entities, in source file timetodistance.bdf
+    Info (12023): Found entity 1: timetodistance
+Info (12021): Found 1 design units, including 1 entities, in source file final_radar_system_top_level.bdf
+    Info (12023): Found entity 1: FINAL_RADAR_SYSTEM_TOP_LEVEL
+Info (12127): Elaborating entity "FINAL_RADAR_SYSTEM_TOP_LEVEL" for the top level hierarchy
+Info (12128): Elaborating entity "stepper_motor_controller" for hierarchy "stepper_motor_controller:inst"
+Info (12128): Elaborating entity "counter8bit" for hierarchy "stepper_motor_controller:inst|counter8bit:inst12"
+Info (12128): Elaborating entity "counter4bit" for hierarchy "stepper_motor_controller:inst|counter8bit:inst12|counter4bit:inst"
+Info (12128): Elaborating entity "Sequencer_2B" for hierarchy "stepper_motor_controller:inst|counter8bit:inst12|counter4bit:inst|Sequencer_2B:inst"
+Info (12128): Elaborating entity "stepper_motor_forwards" for hierarchy "stepper_motor_controller:inst|stepper_motor_forwards:inst"
+Warning (275008): Primitive "GND" of instance "inst16" not used
+Info (12128): Elaborating entity "decoder2bit" for hierarchy "stepper_motor_controller:inst|stepper_motor_forwards:inst|decoder2bit:inst"
+Info (12128): Elaborating entity "Clock_Divider_64" for hierarchy "stepper_motor_controller:inst|stepper_motor_forwards:inst|Clock_Divider_64:inst4"
+Info (12128): Elaborating entity "divideBy10" for hierarchy "stepper_motor_controller:inst|stepper_motor_forwards:inst|divideBy10:inst120"
+Info (12128): Elaborating entity "BCDCounter4bit" for hierarchy "stepper_motor_controller:inst|stepper_motor_forwards:inst|divideBy10:inst120|BCDCounter4bit:inst"
+Info (12128): Elaborating entity "divideBy5" for hierarchy "stepper_motor_controller:inst|stepper_motor_forwards:inst|divideBy5:inst17"
+Warning (275008): Primitive "GND" of instance "inst2" not used
+Info (12128): Elaborating entity "distanceMeasure" for hierarchy "distanceMeasure:inst3"
+Info (12128): Elaborating entity "Display" for hierarchy "distanceMeasure:inst3|Display:inst"
+Info (12128): Elaborating entity "HexToSSD" for hierarchy "distanceMeasure:inst3|Display:inst|HexToSSD:inst3"
+Info (12128): Elaborating entity "SegA" for hierarchy "distanceMeasure:inst3|Display:inst|HexToSSD:inst3|SegA:inst2"
+Info (12128): Elaborating entity "SegB" for hierarchy "distanceMeasure:inst3|Display:inst|HexToSSD:inst3|SegB:inst4"
+Info (12128): Elaborating entity "SegC" for hierarchy "distanceMeasure:inst3|Display:inst|HexToSSD:inst3|SegC:inst5"
+Warning (275008): Primitive "NOT" of instance "inst4" not used
+Info (12128): Elaborating entity "SegD" for hierarchy "distanceMeasure:inst3|Display:inst|HexToSSD:inst3|SegD:inst6"
+Info (12128): Elaborating entity "SegE" for hierarchy "distanceMeasure:inst3|Display:inst|HexToSSD:inst3|SegE:inst7"
+Info (12128): Elaborating entity "SegF" for hierarchy "distanceMeasure:inst3|Display:inst|HexToSSD:inst3|SegF:inst"
+Info (12128): Elaborating entity "SegG" for hierarchy "distanceMeasure:inst3|Display:inst|HexToSSD:inst3|SegG:inst8"
+Info (12128): Elaborating entity "Quad4to1Multiplexer" for hierarchy "distanceMeasure:inst3|Display:inst|Quad4to1Multiplexer:inst"
+Info (12128): Elaborating entity "Multiplexer4-1" for hierarchy "distanceMeasure:inst3|Display:inst|Quad4to1Multiplexer:inst|Multiplexer4-1:inst"
+Info (12128): Elaborating entity "Storage20bit" for hierarchy "distanceMeasure:inst3|Storage20bit:inst2"
+Info (12128): Elaborating entity "measure_ultrasonic_sensor_time_interval" for hierarchy "distanceMeasure:inst3|measure_ultrasonic_sensor_time_interval:inst1"
+Warning (275009): Pin "PING" not connected
+Warning (275008): Primitive "DFF" of instance "inst32" not used
+Warning (275008): Primitive "DFF" of instance "inst4" not used
+Warning (275008): Primitive "NOT" of instance "inst5" not used
+Warning (275008): Primitive "NOT" of instance "inst7" not used
+Info (12128): Elaborating entity "BCDCounter16bit" for hierarchy "distanceMeasure:inst3|measure_ultrasonic_sensor_time_interval:inst1|BCDCounter16bit:inst"
+Warning (275011): Block or symbol "BCDCounter4bitExpandable" of instance "inst2" overlaps another block or symbol
+Warning (275011): Block or symbol "BCDCounter4bitExpandable" of instance "inst3" overlaps another block or symbol
+Warning (275011): Block or symbol "BCDCounter4bitExpandable" of instance "inst4" overlaps another block or symbol
+Warning (275011): Block or symbol "BCDCounter4bitExpandable" of instance "inst5" overlaps another block or symbol
+Info (12128): Elaborating entity "BCDCounter4bitExpandable" for hierarchy "distanceMeasure:inst3|measure_ultrasonic_sensor_time_interval:inst1|BCDCounter16bit:inst|BCDCounter4bitExpandable:inst"
+Info (12128): Elaborating entity "controlultrasonicsensorfinal" for hierarchy "distanceMeasure:inst3|controlultrasonicsensorfinal:inst30"
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 234 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 23 output pins
+    Info (21061): Implemented 208 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4771 megabytes
+    Info: Processing ended: Sun Sep 01 17:55:41 2019
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:20
+
+

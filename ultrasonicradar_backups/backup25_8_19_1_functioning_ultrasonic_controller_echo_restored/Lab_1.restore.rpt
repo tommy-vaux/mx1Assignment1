@@ -1,0 +1,145 @@
+Restore Archived Project report for Lab_1
+Wed Sep 11 11:43:38 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Wed Sep 11 11:43:38 2019 ;
+; Revision Name                   ; Lab_1                                 ;
+; Top-level Entity Name           ; BCDCounter4bitExpandable              ;
+; Family                          ; Cyclone IV E                          ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar_backups/backup25_8_19_1_functioning_ultrasonic_controller_echo.qar' into the 'C:/Users/Tommy/Google Drive Uni/Mechatronics_1/FPGA/ultrasonicradar_backups/backup25_8_19_1_functioning_ultrasonic_controller_echo_restored/' directory
+Info: Generated report 'Lab_1.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/18.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4826 megabytes
+    Info: Processing ended: Wed Sep 11 11:43:38 2019
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++---------------------------------------------+
+; Files Restored                              ;
++---------------------------------------------+
+; File Name                                   ;
++---------------------------------------------+
+; qar_info.json                               ;
+; 4-1Multiplexer.bdf                          ;
+; BCDCounter4bit.bdf                          ;
+; BCDCounter4bitExpandable.bdf                ;
+; Clock_Divider_64.bdf                        ;
+; Decoder.bdf                                 ;
+; Display.bdf                                 ;
+; Formatted_Quad4to1Multiplexer.bsf           ;
+; HexToSSD.bdf                                ;
+; Lab_1.qsf                                   ;
+; Multiplexer4-1.bdf                          ;
+; Multiplexer4_1.bdf                          ;
+; Mux4.bdf                                    ;
+; Quad4to1Multiplexer.bdf                     ;
+; Quad4to1Multiplexer.bsf                     ;
+; SegA.bdf                                    ;
+; SegA_Backup.bdf                             ;
+; SegB.bdf                                    ;
+; SegC.bdf                                    ;
+; SegD.bdf                                    ;
+; SegE.bdf                                    ;
+; SegF.bdf                                    ;
+; SegG.bdf                                    ;
+; Sequencer_2B.bdf                            ;
+; TopLevel.bdf                                ;
+; TopLevelBackup.bdf                          ;
+; Waveform.vwf                                ;
+; Waveform1.vwf                               ;
+; Waveform10.vwf                              ;
+; Waveform11.vwf                              ;
+; Waveform12.vwf                              ;
+; Waveform13.vwf                              ;
+; Waveform14.vwf                              ;
+; Waveform15.vwf                              ;
+; Waveform16.vwf                              ;
+; Waveform17.vwf                              ;
+; Waveform18.vwf                              ;
+; Waveform19.vwf                              ;
+; Waveform2.vwf                               ;
+; Waveform21.vwf                              ;
+; Waveform22.vwf                              ;
+; Waveform23.vwf                              ;
+; Waveform24.vwf                              ;
+; Waveform25.vwf                              ;
+; Waveform26.vwf                              ;
+; Waveform27.vwf                              ;
+; Waveform28.vwf                              ;
+; Waveform3.vwf                               ;
+; Waveform4.vwf                               ;
+; Waveform5.vwf                               ;
+; Waveform6.vwf                               ;
+; Waveform7.vwf                               ;
+; Waveform8.vwf                               ;
+; Waveform9.vwf                               ;
+; controlultrasonicsensor.bdf                 ;
+; controlultrasonicsensorfinal.bdf            ;
+; controlultrasonicsensorv2.bdf               ;
+; counter14bit.bdf                            ;
+; counter28bit.bdf                            ;
+; counter4bit.bdf                             ;
+; decoder2bit.bdf                             ;
+; displayBackup.bdf                           ;
+; displayCounter.bdf                          ;
+; distanceMeasure.bdf                         ;
+; divideBy10.bdf                              ;
+; divideBy5.bdf                               ;
+; measure_ultrasonic_sensor_time_interval.bdf ;
+; template.bdf                                ;
+; ultrasonicsensor.qpf                        ;
+; wait1second.bdf                             ;
+; wait1secondV2.bdf                           ;
+; assignment_defaults.qdf                     ;
++---------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

@@ -1,0 +1,258 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "08/27/2019 12:28:37"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          Storage20bit
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Storage20bit_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg ACTIVE;
+reg Digit0In;
+reg Digit1In;
+reg Digit2In;
+reg Digit3In;
+reg Digit4In;
+reg Digit5In;
+reg Digit6In;
+reg Digit7In;
+reg Digit8In;
+reg Digit9In;
+reg Digit10In;
+reg Digit11In;
+reg Digit12In;
+reg Digit13In;
+reg Digit14In;
+reg Digit15In;
+reg Digit16In;
+reg Digit17In;
+reg Digit18In;
+reg Digit19In;
+// wires                                               
+wire Digit0Out;
+wire Digit1Out;
+wire Digit2Out;
+wire Digit3Out;
+wire Digit4Out;
+wire Digit5Out;
+wire Digit6Out;
+wire Digit7Out;
+wire Digit8Out;
+wire Digit9Out;
+wire Digit10Out;
+wire Digit11Out;
+wire Digit12Out;
+wire Digit13Out;
+wire Digit14Out;
+wire Digit15Out;
+wire Digit16Out;
+wire Digit17Out;
+wire Digit18Out;
+wire Digit19Out;
+
+// assign statements (if any)                          
+Storage20bit i1 (
+// port map - connection between master ports and signals/registers   
+	.ACTIVE(ACTIVE),
+	.Digit0In(Digit0In),
+	.Digit0Out(Digit0Out),
+	.Digit1In(Digit1In),
+	.Digit1Out(Digit1Out),
+	.Digit2In(Digit2In),
+	.Digit2Out(Digit2Out),
+	.Digit3In(Digit3In),
+	.Digit3Out(Digit3Out),
+	.Digit4In(Digit4In),
+	.Digit4Out(Digit4Out),
+	.Digit5In(Digit5In),
+	.Digit5Out(Digit5Out),
+	.Digit6In(Digit6In),
+	.Digit6Out(Digit6Out),
+	.Digit7In(Digit7In),
+	.Digit7Out(Digit7Out),
+	.Digit8In(Digit8In),
+	.Digit8Out(Digit8Out),
+	.Digit9In(Digit9In),
+	.Digit9Out(Digit9Out),
+	.Digit10In(Digit10In),
+	.Digit10Out(Digit10Out),
+	.Digit11In(Digit11In),
+	.Digit11Out(Digit11Out),
+	.Digit12In(Digit12In),
+	.Digit12Out(Digit12Out),
+	.Digit13In(Digit13In),
+	.Digit13Out(Digit13Out),
+	.Digit14In(Digit14In),
+	.Digit14Out(Digit14Out),
+	.Digit15In(Digit15In),
+	.Digit15Out(Digit15Out),
+	.Digit16In(Digit16In),
+	.Digit16Out(Digit16Out),
+	.Digit17In(Digit17In),
+	.Digit17Out(Digit17Out),
+	.Digit18In(Digit18In),
+	.Digit18Out(Digit18Out),
+	.Digit19In(Digit19In),
+	.Digit19Out(Digit19Out)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// ACTIVE
+initial
+begin
+	repeat(16)
+	begin
+		ACTIVE = 1'b0;
+		ACTIVE = #29500 1'b1;
+		# 29500;
+	end
+	ACTIVE = 1'b0;
+	ACTIVE = #29500 1'b1;
+end 
+
+// Digit0In
+initial
+begin
+	Digit0In = 1'b1;
+end 
+
+// Digit1In
+initial
+begin
+	Digit1In = 1'b0;
+end 
+
+// Digit2In
+initial
+begin
+	Digit2In = 1'b0;
+end 
+
+// Digit3In
+initial
+begin
+	Digit3In = 1'b0;
+end 
+
+// Digit4In
+initial
+begin
+	Digit4In = 1'b0;
+end 
+
+// Digit5In
+initial
+begin
+	Digit5In = 1'b0;
+end 
+
+// Digit6In
+initial
+begin
+	Digit6In = 1'b0;
+end 
+
+// Digit7In
+initial
+begin
+	Digit7In = 1'b0;
+end 
+
+// Digit8In
+initial
+begin
+	Digit8In = 1'b0;
+end 
+
+// Digit9In
+initial
+begin
+	Digit9In = 1'b0;
+end 
+
+// Digit10In
+initial
+begin
+	Digit10In = 1'b0;
+end 
+
+// Digit11In
+initial
+begin
+	Digit11In = 1'b0;
+end 
+
+// Digit12In
+initial
+begin
+	Digit12In = 1'b0;
+end 
+
+// Digit13In
+initial
+begin
+	Digit13In = 1'b0;
+end 
+
+// Digit14In
+initial
+begin
+	Digit14In = 1'b0;
+end 
+
+// Digit15In
+initial
+begin
+	Digit15In = 1'b0;
+end 
+
+// Digit16In
+initial
+begin
+	Digit16In = 1'b0;
+end 
+
+// Digit17In
+initial
+begin
+	Digit17In = 1'b0;
+end 
+
+// Digit18In
+initial
+begin
+	Digit18In = 1'b0;
+end 
+
+// Digit19In
+initial
+begin
+	Digit19In = 1'b0;
+end 
+endmodule
+
